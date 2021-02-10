@@ -1,0 +1,48 @@
+<html>
+    <header>
+        <style>
+            html {
+    height: 1500px;
+}
+
+.parent-element{
+    position : relative;
+    height: 800px;
+    padding: 50px 10px;
+    background-color: #81adc8;
+}
+
+.main-element{
+    padding: 10px;
+    background-color: yellow;
+    position: sticky;
+    top:10px
+}
+
+.sibling-element{
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+
+        </style>
+    </header>
+	<body>
+        <div class="parent-element">
+            <p>
+                position: sticky is a mix of position: relative and position: fixed. It acts like a relatively positioned element until a certain scroll point and then it acts like a fixed element.
+            </p>
+            <div class="sibling-element">
+                I'm the other sibling element.
+            </div>
+            
+            <div class="main-element">
+                All eyes on me. I am the main element.
+            </div>
+            
+            <div class="sibling-element">
+                I'm the other sibling element.
+            </div>
+        </div>
+    </body>
+<html>

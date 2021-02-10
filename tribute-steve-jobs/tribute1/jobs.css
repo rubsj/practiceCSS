@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.image-header {
+  width: 90vw;
+  height: 50vh;
+  background-color: #f8f8ff;
+  background-image: url(./stve_jobs_header1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: left 10% bottom 75%;
+  margin: 1rem auto;
+}
+
+.quote-text {
+  text-align: center;
+  vertical-align: top;
+  font-family: "Pacifico", cursive;
+  font-size: 1.5rem;
+  border: 0 solid black;
+  background-color: #ffffff;
+  height: 100%;
+}
+
+.content-header {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ececec;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.content-container main {
+  flex: 2 1 0;
+}
+
+.content-container aside {
+  flex: 1 1 0;
+  align-self: flex-start;
+}
+
+.event-container:nth-child(1n) {
+  background-color: #f9f9f9;
+}
+
+.event-container:first-child {
+  border-top: 2px solid #ccc;
+  margin-top: 0;
+}
+
+.event-container:last-child {
+  border-bottom: 2px solid #ccc;
+}
+
+.event-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  line-height: 1.75rem;
+}
+
+.event-date {
+  font-weight: bold;
+  font-size: 0.85rem;
+  flex: 0 0 100px;
+  background-color: #ffffff;
+  align-self: stretch;
+}
+
+
+.info {
+  margin-top: 0;
+  font-family: "Dosis", sans-serif;
+  font-size: 90%;
+  text-align: center;
+  background-color: white;
+  box-sizing: unset;
+  width: 100%;
+}
+
+.th,
+.info td {
+  vertical-align: top;
+  border: 0;
+  border-bottom: 1px solid #dddddd;
+  padding: 0.2em;
+}
+
+#nutshell {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.profile-image {
+  background-image: url("./steve_jobs_profile.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 200px;
+}
+
+#footer-quote {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1rem auto;
+}
+
+a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #0000ff;
+}

@@ -1,0 +1,48 @@
+<html>
+    <header>
+        <style>
+           
+.parent-element{
+    height: 400px;
+    padding: 50px 10px;
+    background-color: #81adc8;
+}
+
+.main-element{
+    padding: 10px;
+    background-color: yellow;
+    position: relative;
+    bottom:10px;
+    left:10px;
+}
+
+.sibling-element{
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+
+        </style>
+    </header>
+	<body>
+
+        <div class="parent-element">
+            <p>Elements with position: relative remain in the normal flow of the document. 
+                <br/>But, unlike static elements, the left, right, top, bottom and z-index properties
+                <br/> affect the position of the element.
+                <br/> An offset, based on the values of left, right, top and bottom properties, 
+                <br/> is applied to the element relative to itself.</p>
+            <div class="sibling-element">
+                I'm the other sibling element.
+            </div>
+            
+            <div class="main-element">
+                All eyes on me. I am the main element.
+            </div>
+            
+            <div class="sibling-element">
+                I'm the other sibling element.
+            </div>
+        </div>
+    </body>
+<html>

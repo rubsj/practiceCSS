@@ -1,0 +1,48 @@
+<html>
+    <header>
+        <style>
+           
+.parent-element{
+    position: relative;
+    height: 400px;
+    padding: 50px 10px;
+    background-color: #81adc8;
+}
+
+.main-element{
+    padding: 10px;
+    background-color: yellow;
+    position: absolute;
+    bottom:10px;
+    left:10px;
+}
+
+.sibling-element{
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+
+        </style>
+    </header>
+	<body>
+        <div class="parent-element">
+            <p>
+                Elements with position: absolute are positioned relative to their parent elements. In this case, the element is removed from the normal document flow. The other elements will behave as if that element is not in the document. No space is created for the element in the page layout. The values of left, top, bottom and right determine the final position of the element.
+                <br/>One thing to note is that an element with position: absolute is positioned relative to its closest positioned ancestor. That means that the parent element has to have a position value other than position: static.
+                <br/>If the closest parent element is not positioned, it is positioned relative to the next parent element that is positioned. If there's no positioned ancestor element, it is positioned relative to the <html> element.
+            </p>
+            <div class="sibling-element">
+                I'm the other sibling element.
+            </div>
+            
+            <div class="main-element">
+                All eyes on me. I am the main element.
+            </div>
+            
+            <div class="sibling-element">
+                I'm the other sibling element.
+            </div>
+        </div>
+    </body>
+<html>
