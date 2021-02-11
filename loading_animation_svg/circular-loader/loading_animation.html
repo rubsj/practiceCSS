@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page showing use of loading </title>
+    <link rel="stylesheet" href="loading_animation.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <p>In this example we will create loading icon using CSS and SVG</p>
+            <p>the animation template consists of two circles one on top of another, with the first circle being thicker than the second one both having the same circumference giving the illusion of one circle being inside the other.</p>
+            <p>We animate the second circle, which will be on top of the first circle with CSS to complete our loading animation</p>
+            <p>When we draw our circle it is simply a single dash stroke painting the outline of our shape from beginning to the end of the circle, the  <b>stroke-dasharray</b> attribute gives us the ability to break that into a pattern of dashes and gaps. We can exploit this feature to obtain the animation end result that we want.</p>
+            <p>In order to have a smooth animation effect we need to know the circumference of the circle. We then use the <b>stroke-dasharray</b>  attribute to draw a maximum of one dash and gap alternating their sizes at different states of the animation while maintaining the circumference length when the two are added.</p>
+            <p>The <b>stroke-dashoffset</b>  attribute is a presentation attribute defining an offset on the rendering of the associated dash array, this offset gives the rotational effect to the loading animation, otherwise the animation will appear broken.</p>
+        </div>
+        
+    
+    <div class="svg-loader">
+        <svg class="svg-container" height="100" width="100" viewBox="0 0 100 100">
+            <circle class="loader-svg bg" cx="50" cy="50" r="45"> </circle>
+            <circle class="loader-svg animate" cx="50" cy="50" r="45"> </circle>
+        
+        </svg>
+    </div>
+</div>
+    
+</body>
+</html>
