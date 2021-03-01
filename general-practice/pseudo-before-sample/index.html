@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesudo Before and After use Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="description">
+            <ul>
+                <li>In CSS, ::before and ::after creates pseudo-elements that is the prepended and appended to the selected element respectively.</li>
+                <li>to use it content property must be provided</li>
+                <li>it does not get displayed until width is defined</li>
+                <li>if you want to hide it and need to define width upfront , hide can be done using transform scale(0)</li>
+                <li>In this example we add ::before element to Li on click.</li>
+                <li>clicking on li item toggle done icon which is created using css</li>
+                <li>i icon is created using ::before element</li>
+                <li>tooltip is also added on hovering over the i icon which is created using ::after</li>
+            </ul>
+        </div>
+        <div class=todo>
+            <ul>
+                <li><i  data-tootlip="Buy milk"></i>Buy milk</li>
+                <li><i  data-tootlip="Take the dog for a walk"></i> Take the dog for a walk</li>
+                <li><i  data-tootlip="Exercise"></i> Exercise</li>
+                <li><i  data-tootlip="Write code"></i>Write code</li>
+                <li><i  data-tootlip="Play music"></i>Play music</li>
+                <li><i  data-tootlip="Relax"></i>Relax</li>
+              </ul>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
