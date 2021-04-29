@@ -1,0 +1,154 @@
+.frame {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 400px;
+    height: 400px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    background-color: #009688;
+
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .circle {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: #f0de75;
+            clip-path: circle(50%);
+            animation: ground 5s ease-in-out infinite;
+
+            .sky {
+                position: absolute;
+                z-index: 0;
+                width: 200px;
+                height: 130px;
+                background-color: #7ddffc;
+                animation: sky 5s ease-in-out infinite;
+            }
+            .sun {
+                position: absolute;
+                z-index: 2;
+                top: 10px;
+                left: 85px;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: #ffef00;
+                animation: sun 5s ease-in-out infinite;
+                transform-origin: 50% 470%;
+            }
+            .side-left {
+                position: absolute;
+                top: 70px;
+                left: 40px;
+                width: 120px;
+                height: 60px;
+                background-color: #f4f4f4;
+                clip-path: polygon(0 100%, 100% 100%, 50% 0);
+                animation: pyramide 5s ease-in-out infinite;
+            }
+
+            .side-right {
+                position: absolute;
+                top: 70px;
+                right: 40px;
+                width: 60px;
+                height: 60px;
+                clip-path: polygon(30% 100%, 100% 100%, 0 0);
+                background-color: #dddada;
+                animation: pyramide 5s ease-in-out infinite reverse;
+            }
+
+            .shadow {
+                position: absolute;
+                top: 130px;
+                left: -30px;
+                width: 260px;
+                height: 100px;
+                background-color: #00000033;
+                animation: shadow 5s ease-in-out infinite;
+            }
+        }
+    }
+}
+
+@keyframes sun {
+    0% {
+        background-color: #f57209;
+        transform: rotate(-70deg);
+    }
+    33% {
+        background-color: #ffef00;
+        transform: rotate(-30deg);
+    }
+    66% {
+        background-color: #ffef00;
+        transform: rotate(30deg);
+    }
+    100% {
+        background-color: #f57209;
+        transform: rotate(70deg);
+    }
+}
+
+@keyframes sky {
+    0% {
+        background-color: #272c34;
+    }
+    33% {
+        background-color: #7ddffc;
+    }
+    66% {
+        background-color: #7ddffc;
+    }
+    100% {
+        background-color: #272c34;
+    }
+}
+
+@keyframes pyramide {
+    0% {
+        background: #272c34;
+    }
+    33% {
+        background: #f4f4f4;
+    }
+    66% {
+        background: #dddada;
+    }
+    100% {
+        background: #272c34;
+    }
+}
+
+@keyframes ground {
+    0% {
+        background-color: #272c34;
+    }
+    33% {
+        background-color: #f0de75;
+    }
+    66% {
+        background-color: #f0de75;
+    }
+    100% {
+        background-color: #272c34;
+    }
+}
+
+@keyframes shadow {
+    0% {
+        clip-path: polygon(100% 0%, 70px 0, 190px 0);
+    }
+    33% {
+        clip-path: polygon(75% 30%, 70px 0, 190px 0);
+    }
+    100% {
+        clip-path: polygon(0% 0%, 70px 0, 190px 0);
+    }
+}
