@@ -1,2 +1,2 @@
-- command to conver scss file to css `node-sass ./style.scss ./style.css -w`
+- command to conver scss file to css `sass ./style.scss ./style.css -w`
 - create Sunrise -sunset
